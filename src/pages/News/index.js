@@ -18,8 +18,6 @@ export const News = observer(() => {
 		return () => store.unsubscribe();
 	}, [title]);
 
-	console.log(store.comments);
-
 	return (
 		<div className="App">
 			<Container>
