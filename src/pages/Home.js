@@ -10,8 +10,6 @@ function HomePage() {
 		}
 	}, []);
 
-	console.log(store.headlines[0]);
-
 	return (
 		<div className="App">
 			<h1>Headlines</h1>

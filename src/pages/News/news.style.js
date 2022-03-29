@@ -16,10 +16,18 @@ export const ImageContainer = styled.div`
 	overflow: hidden;
 
 	img {
-		height: 100%;
+		display: block;
+		max-width: 100%;
+		max-height: 500px;
 		width: auto;
-		object-fit: contain;
+		height: auto;
+		margin: 0 auto;
 	}
 `;
 
-export const CommentSection = styled.div``;
+export const Comments = styled.div`
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-top: 10px;
+`;
