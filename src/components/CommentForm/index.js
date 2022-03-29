@@ -11,12 +11,7 @@ const commentSchema = yup.object().shape({
 });
 
 export const CommentForm = observer(({ title }) => {
-	const {
-		register,
-		handleSubmit,
-		formState: { errors },
-		reset,
-	} = useForm({
+	const { register, handleSubmit, reset } = useForm({
 		resolver: yupResolver(commentSchema),
 	});
 
